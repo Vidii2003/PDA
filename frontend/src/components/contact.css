@@ -1,0 +1,89 @@
+.search-box {
+    width: fit-content;
+    height: fit-content;
+    position: relative;
+  }
+  
+  .input-search {
+    height: 50px;
+    width: 50px; /* Set an initial width */
+    border-style: none;
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 2px;
+    outline: none;
+    border-radius: 25px;
+    transition: all .5s ease-in-out;
+    background:  linear-gradient(to right, #8360c3, #2ebf91);
+    padding-right: 40px;
+    color: black;
+    z-index: 0; /* Ensure the input is above the button */
+    text-wrap: wrap;
+  }
+  
+  /* Remove .input-search::value, as it's not a valid selector */
+  /* You might have intended to use .input-search::placeholder instead */
+  
+  .btn-search {
+    width: 50px;
+    height: 50px;
+    border-style: none;
+    font-size: 20px;
+    font-weight: bold;
+    outline: none;
+    border-radius: 50%;
+    position: absolute;
+    right: 0px;
+    color: black;
+    background-color: transparent;
+    pointer-events: painted;
+    z-index: 0; /* Ensure the button is behind the input */
+  }
+  
+  .gls2 {
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    transform: translateX(-2800%);
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .gls1 {
+    height: 40px;
+    width: 40px;
+    z-index: 1;
+    transform: translateX(-750%);
+    transition: transform 0.5s ease-in-out;
+  }
+  .input-search{
+    font-size: 17px;
+   color:black;
+    display: none;
+  }
+  .input-search h6{
+    text-align: center;
+    font-weight: bold;
+    
+  }
+  .input-search p{
+    font-weight: semi-bold;
+    margin-left: 15px;
+  }
+  /* Adjust the width when the input is focused */
+  .btn-search:focus ~ .input-search,
+  .input-search:focus {
+    width: 400px; /* Set the desired width when focused */
+    height: 170px;
+    display: block;
+    border-radius: 20px;
+    background-color: #EC407A;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+  }
+  .btn-search:focus .gls2{
+display: none;
+  }
+  .btn-search:focus .gls1{
+    display: none;
+      }
+  

@@ -1,0 +1,23 @@
+/* Add these styles to your CSS file */
+@keyframes scrollAnimation {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-25%);
+    }
+    50% {
+        transform: translateX(-50%);
+    }
+    75% {
+        transform: translateX(-75%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.animation-running {
+    animation: scrollAnimation 50s linear 0s infinite; /* Adjust duration as needed */
+}
+

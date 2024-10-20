@@ -1,0 +1,287 @@
+.searchbox {
+  width: fit-content;
+  height: fit-content;
+  
+}
+
+.inputsearch {
+  height: 50px;
+  width: 50px;
+  border-style: none;
+  padding: 10px;
+  font-size: 18px;
+  letter-spacing: 2px;
+  outline: none;
+  border-radius: 25px;
+  transition: all .5s ease-in-out;
+  background:linear-gradient(to right, #ff416c, #ff4b2b);
+  padding-right: 40px;
+  color: black;
+ 
+  z-index: 4;
+  transform: translateY(-1800%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.inputsearch::placeholder {
+  color: black;
+  font-size: 18px;
+  letter-spacing: 2px;
+  font-weight: 200;
+}
+
+.gls{
+    height: 40px;
+    width:40px;
+    z-index: 1;
+    transform: translateX(-3550%); /* Move the button to the left */
+    
+    transition: transform 0.5s ease-in-out;
+}
+.btnsearch {
+  width: 50px;
+  height: 50px;
+  border-style: none;
+  font-size: 20px;
+  font-weight: bold;
+  outline: none;
+  cursor: pointer;
+  border-radius: 50%;
+  position: absolute;
+  right: 0px;
+  color: black;
+  background-color: transparent; /* Use a transparent background */
+  pointer-events: painted;
+  z-index: 1; /* Ensure the button is behind the input */
+  transform: translateY(-1800%);
+  transition: transform 0.5s ease-in-out;
+}
+
+.btnsearch:focus ~ .inputsearch,
+.inputsearch:focus {
+  width: 300px;
+  border-radius: 0px;
+  background:linear-gradient(to right, #ff416c, #ff4b2b);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 500ms cubic-bezier(0, 0.110, 0.35, 2);
+}
+.btnsearch:focus .gls{
+  transform: translateX(-2930%); 
+}
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes text-clip {
+  from {
+    clip-path: polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%);
+  }
+  to {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+}
+
+@keyframes outer-left {
+  from {
+    transform: translateX(50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+@keyframes inner-left {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: none;
+  }
+}
+
+.cafe{
+  animation: outer-left 1s 1s cubic-bezier(0.5, 0, 0.1, 1) both;
+ 
+}
+
+
+.title-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease both;
+}
+
+.cafe-inner {
+  display: inline-block;
+  animation: inner-left 1s 1s ease both,
+    text-clip 1s 0s cubic-bezier(0.5, 0, 0.1, 1) both;
+}
+
+
+.title {
+  animation: outer-left 1s 1s ease both;
+}
+
+.q {
+  z-index: 3;
+  transform: translateY(-250%);
+  transition: transform 0.5s ease-in-out;
+  width: 800px;
+  margin-left: 350px;
+  
+}
+
+.popup {
+  width:500px;
+  margin-left: 500px;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+ 
+  border-radius: 6px;
+  
+  text-align: center;
+}
+.popup .popup-content  {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  
+}
+
+.s {
+  margin-top: 150px;
+  z-index:4;
+  position: absolute;
+  
+  transition: 0.5s;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  
+  background: linear-gradient(90deg,#c33764, #1d2671, #ff00cc, #333399);
+  background-size: 400%;
+  border-radius: 30px;
+  
+}
+
+.s:hover {
+  animation: animate 8s linear infinite;
+  
+  transition: 0.5s;
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.s:before {
+  
+  transition: 0.5s;
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background:linear-gradient(90deg,#c33764, #1d2671, #ff00cc, #333399);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+  
+}
+
+.s:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+  
+  transition: 0.5s;
+}
+.fade-in-text {
+  font-family: Arial;
+  font-size: 150px;
+  animation: fadeIn 5s;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(-225deg,#fcb045  0% , #b21f1f 29%,#833ab4 67%,#ffffff 100% );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #000000;
+  background-clip: text;
+ font-weight: 800;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 90px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: -200% center;
+  }
+}
+
+.lineUp {
+  animation: 3s anim-lineUp ease-out infinite;
+  font-weight: 600;
+  
+}
+
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+  20% {
+    opacity: 0;
+  }
+  
+  50% {
+  
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+    
+  
+  }
+  
+}
+.tex{
+  z-index: 1;
+transform: translateY(-400%);
+}

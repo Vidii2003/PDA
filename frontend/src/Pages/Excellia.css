@@ -1,0 +1,202 @@
+Container styling
+.excellia-container {
+  position: relative; /* Allow absolute positioning of child elements */
+  overflow: hidden; /* Prevent overflow of particles */
+}
+
+.particles-container {
+  position: absolute; /* Positioning it absolutely to cover the entire container */
+  top: 0; /* Align to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  z-index: -1; /* Ensure particles are behind other content */
+}
+
+/* 1st Section: Hero with background video */
+.hero-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  position: relative; /* Ensure child elements are positioned correctly */
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2; /* Ensure video is behind the content */
+}
+
+.hero-content h1 {
+  font-size: 5rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.hero-content h2 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Info Section */
+.info-grid {
+  display: flex;
+  justify-content: space-around;
+  background-color: #001f3f; /* Dark blue */
+  padding: 20px 20px 20px 20px;
+  color: white;
+  z-index: 2;
+  transform: translateY(350px);
+}
+
+.info-item {
+  text-align: center;
+  max-width: 250px;
+  margin-right: 20px;
+}
+
+.info-item i {
+  font-size: 2rem;
+  color: #00aaff; /* Icon color */
+  margin-bottom: 10px;
+}
+
+.info-item h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.info-item p {
+  font-size: 1rem;
+}
+
+/* 2nd Section: Image on left, details on right */
+.details-section {
+  transform: translateZ(0); 
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px 0;
+  background-color: #07091c;
+  color:#fff
+}
+
+.details-image {
+  margin-top: 50px;
+  margin-right: 100px;
+  width: 650px;
+  height: 300px;
+  float: left;
+margin-left: 20px;
+position: relative;
+  z-index: 10;
+}
+.pos{
+  display: flex;
+
+
+  margin-top: 20px;
+  padding-left: 80px;
+  padding-top: 30px;
+  width: 650px;
+  height: 430px;
+  border-radius: 50px;
+  opacity: 80%;
+  background-color: white;
+  
+  z-index: 3;
+  margin-right: 20px;
+ 
+}
+.details-text {
+  margin-right: 100px;
+  margin-top: 20px;
+  max-width: 500px;
+  z-index: 2;
+  color: #001f3f;
+}
+
+.details-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.details-text p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.details-button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.details-button:hover {
+  background-color: #45a049;
+}
+
+/* 3rd Section: Small divs with images and titles */
+.cards-section {
+ color: white;
+ text-align: center;
+  padding: 50px;
+  background-color: #221130;
+ 
+}
+.cards-section{
+  font-size: 30px;
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+}
+.card {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  margin-bottom: 15px;
+}
+
+.card h3 {
+  font-size: 1.5rem;
+}
+
+/* Footer Section */
+.footer-section {
+  text-align: center;
+  padding: 20px;
+  background-color: #fff;
+  color: black;
+  z-index:2;
+}
+.App {
+  position: relative; /* Allow absolute positioning of child elements */
+  overflow: hidden; /* Prevent overflow of particles */
+  height: 100vh; /* Make sure the app takes full viewport height */
+}
+
+
+.content {
+  position: relative; /* Position relative to allow z-index to work */
+  z-index: 2; /* Ensure content appears above particles */
+  color: white; /* Change text color to ensure visibility */
+  text-align: center; /* Centering the text */
+  padding: 20px; /* Adding some padding for better layout */
+}
+

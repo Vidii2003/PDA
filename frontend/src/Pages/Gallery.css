@@ -1,0 +1,21 @@
+.back{
+    background-image: url("https://media.istockphoto.com/id/1255203350/photo/teamwork-friendship-hiking-help-each-other-trust-assistance-silhouette-in-mountains-sunrise.jpg?s=612x612&w=0&k=20&c=XU9MhkkMdyM59gAMDSUwltr-LhVyjWHLvTxQCPwVbF8=");
+    background-repeat: no-repeat;
+  background-size: cover; 
+  background-position: center; 
+}
+.grad{
+    background: linear-gradient(to right, #ee0979, #ff6a00);
+    z-index: 2;
+    transform: translateY(-100%);
+    opacity:50%;
+    height: 500px;
+   
+}
+.h1 {
+    transition: transform 0.3s ease-in-out;
+  }
+
+.h1:hover {
+    transform: scale(1.5);
+  }

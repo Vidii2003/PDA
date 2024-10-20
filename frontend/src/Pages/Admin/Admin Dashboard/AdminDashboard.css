@@ -1,0 +1,213 @@
+.container {
+  width: 1200px;
+  margin: 20px 0px;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+  text-decoration: none;
+  list-style-type: none;
+  padding-left: 2px;
+  padding: 0;
+  margin: 0;
+}
+.Navi {
+ margin-right: -15%;
+  position: sticky;
+  margin-top: 5%;
+  bottom: 0;
+  width: 90px;
+  background-color: #343a40; /* Set background to transparent */
+  overflow: hidden;
+  transition: 1s;
+}
+.Navi:hover {
+  width: 200px;
+  transition: 1s;
+}
+
+.Navi #a {
+  display: flex;
+  margin-right: 10%;
+  align-items: center;
+  color: #000000; /* Set font color to white */
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+}
+.Navi #a:hover {
+  margin-right: 10%;
+  background-color: rgba(255, 255, 255, 0.1); /* Add a slight hover effect */
+}
+ul .li {
+  display: inline-block;
+  margin-top: 15%;
+  padding: 10px;
+}
+
+ul .li1 {
+  display: block;
+  margin-top: 30%;
+  margin-bottom: 10px;
+}
+#a {
+  position: relative;
+  width: 280px;
+  font-size: 14px;
+  color: #000000;
+  display: table;
+  padding: 10px;
+}
+
+.user-name {
+  font-size: 24px;
+  font-weight: bold;
+  color: #000000;
+  margin-left: 20%; /* Adjust space between the logo and name */
+  text-align: left;
+}
+#user-details, #registered-users {
+  margin-top: 30px;
+}
+
+.nav-item {
+  visibility: hidden; /* Initially hidden */
+    opacity: 0; /* Add transition effect */
+    margin-left: 10px;
+    color:#fff;
+    transition: visibility 0s, opacity 0.5s ease;
+}
+
+.Navi:hover .nav-item {
+  visibility: visible; /* Make visible */
+  opacity: 1;
+  color:#fff;
+  transition: visibility 0s 0s, opacity 0.5s ease; /* Delay visibility for smooth transition */
+}
+
+.container{
+  display: flex;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(35px);
+    border-radius: 10px;
+    width: 100%;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.7);
+    color: #000000;
+}
+.btn {
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  margin-right: 10px;
+  text-align: center;
+}
+
+
+.export {
+  background-color: #28a745;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+  border: none;
+  color: white;
+  width: 100%;
+  margin-right: 10px;
+  text-align: center;
+}
+
+.custom-logo {
+  height: 80px;
+  width: auto;
+}
+
+.custom-table-container {
+  margin: 20px 0;
+  overflow: auto;
+  width:1000px;  
+  background: white;
+  
+}
+
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0;
+  background: #ffffff5d;
+}
+
+.custom-table th, .custom-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.custom-table th {
+  background-color: #ff7301;
+}
+
+.custom-table tbody tr:hover {
+  background-color: #f6742289;
+}
+
+.text-center {
+  text-align: center;
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+}
+
+.main {
+  padding: 20px;
+  margin-left: -10%;
+  margin-top: 0%;
+}
+
+.main-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center; /* Align vertically centered */
+  padding: 10px;
+}
+
+ul li a {
+  color: #fff;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+ul li a:hover {
+  background-color: #555;
+  transition: background-color 0.3s ease;
+}
+
+.event-list {
+  list-style-type: none;
+}
+
+.event-list li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+h1, h2 {
+  font-family: 'Arial', sans-serif;
+}
+
+.logout {
+  background-color: #ff4757;
+  margin-top: 15px;
+}
+
