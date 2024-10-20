@@ -3,9 +3,8 @@
     "private": true,
     "version": "0.0.0",
     "scripts": {
-        "dev": "concurrently \"npm run dev --prefix frontend\" \"node backend\\server.js --prefix backend\"",
         "client": "npm run dev",
-        "server": "node backend\server.js"
+        "server": "node backend/server.js"
     },
     "dependencies": {
         "@emailjs/browser": "^4.4.1",
