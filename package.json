@@ -3,8 +3,8 @@
     "private": true,
     "version": "0.0.0",
     "scripts": {
-        "client": "npm run dev",
-        "server": "node backend/server.js"
+        "client": "vite",
+        "server": "nodemon backend/server.js"
     },
     "dependencies": {
         "@emailjs/browser": "^4.4.1",
