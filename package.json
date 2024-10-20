@@ -5,7 +5,7 @@
     "scripts": {
         "build": "vite build",
         "client": "vite",
-        "server": "nodemon backend/server.js"
+        "server": "node backend/server.js"
     },
     "dependencies": {
         "@emailjs/browser": "^4.4.1",
